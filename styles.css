@@ -51,4 +51,71 @@ body {
 .contMain2 div:nth-child(2) img, .contMain2 div:nth-child(3) img {
   width: 20px;
   height: 20px;
+}
+
+.contMain3, .contMain4, .contMain5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+}
+.contMain3 img, .contMain4 img, .contMain5 img {
+  width: 100%;
+  padding: 0px 10px;
+}
+.contMain3 h3, .contMain3 p, .contMain4 h3, .contMain4 p, .contMain5 h3, .contMain5 p {
+  text-align: center;
+}
+
+.contMain6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  gap: 30px;
+}
+.contMain6 h3 {
+  text-align: center;
+}
+.contMain6 input {
+  width: 60%;
+}
+
+.contMain7 div:nth-child(1) {
+  padding: 0 20px;
+}
+.contMain7 div:nth-child(1) form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+.contMain7 div:nth-child(1) input[type=submit] {
+  width: 40%;
+  justify-self: end;
+}
+.contMain7 div:nth-child(2) {
+  background: red;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "iconW iconW" "para para" "iconP phone" "iconM mail";
+  column-gap: 37px;
+}
+.contMain7 div:nth-child(2) img:nth-child(1) {
+  grid-area: iconW;
+}
+.contMain7 div:nth-child(2) p:nth-child(2) {
+  grid-area: para;
+}
+.contMain7 div:nth-child(2) img:nth-child(3) {
+  grid-area: iconP;
+}
+.contMain7 div:nth-child(2) span:nth-child(4) {
+  grid-area: phone;
+}
+.contMain7 div:nth-child(2) img:nth-child(5) {
+  grid-area: iconM;
+}
+.contMain7 div:nth-child(2) span:nth-child(6) {
+  grid-area: mail;
 }/*# sourceMappingURL=styles.css.map */

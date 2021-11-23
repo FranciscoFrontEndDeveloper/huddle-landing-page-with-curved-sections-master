@@ -39,3 +39,55 @@ body
   img
    width: 20px
    height: 20px
+
+.contMain3, .contMain4, .contMain5
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(3,auto)
+ gap: 30px
+ img
+  width: 100%
+  padding: 0px 10px
+ h3, p
+  text-align: center
+
+.contMain6
+ display: grid
+ grid-template-columns: 1fr
+ grid-template-rows: repeat(2,auto )
+ justify-items: center
+ gap: 30px
+ h3
+  text-align: center
+ input
+  width: 60%
+
+.contMain7
+ div:nth-child(1)
+  padding: 0 20px
+  form
+   display: grid
+   grid-template-columns: 1fr
+   grid-template-rows: repeat(4,auto )
+  input[type="submit"]
+   width: 40%
+   justify-self: end
+ div:nth-child(2)
+  background: red
+  display: grid
+  grid-template-columns: auto 1fr
+  grid-template-rows: repeat(4,auto )
+  grid-template-areas: 'iconW iconW' 'para para' 'iconP phone' 'iconM mail'
+  column-gap: 37px
+  img:nth-child(1)
+   grid-area: iconW
+  p:nth-child(2)
+   grid-area: para
+  img:nth-child(3)
+   grid-area: iconP
+  span:nth-child(4)
+   grid-area: phone
+  img:nth-child(5)
+   grid-area: iconM
+  span:nth-child(6)
+   grid-area: mail
