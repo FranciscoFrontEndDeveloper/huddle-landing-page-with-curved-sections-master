@@ -1,3 +1,32 @@
 body {
-  background: black;
+  background: white;
+}
+
+.containerMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
+}
+
+.contMain0 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  padding: 30px 10px;
+}
+.contMain0 img {
+  width: 100px;
+}
+
+.contMain1 {
+  display: grid;
+  justify-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.contMain1 h1, .contMain1 p {
+  text-align: center;
+}
+.contMain1 input {
+  width: 60%;
 }/*# sourceMappingURL=styles.css.map */
