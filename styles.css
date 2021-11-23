@@ -29,4 +29,26 @@ body {
 }
 .contMain1 input {
   width: 60%;
+}
+
+.contMain2 {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+}
+.contMain2 div:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+.contMain2 div:nth-child(1) img {
+  width: 100%;
+  padding: 0px 10px;
+}
+.contMain2 div:nth-child(2), .contMain2 div:nth-child(3) {
+  width: 60%;
+}
+.contMain2 div:nth-child(2) img, .contMain2 div:nth-child(3) img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=styles.css.map */
