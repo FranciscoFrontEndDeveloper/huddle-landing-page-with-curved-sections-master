@@ -118,4 +118,14 @@ body {
 }
 .contMain7 div:nth-child(2) span:nth-child(6) {
   grid-area: mail;
+}
+.contMain7 div:nth-child(3) {
+  background: #41e620;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+}
+.contMain7 div:nth-child(3) img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=styles.css.map */
