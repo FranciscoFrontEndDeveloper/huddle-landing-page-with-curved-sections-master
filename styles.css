@@ -18,6 +18,9 @@ body {
 .contMain0 img {
   width: 100px;
 }
+.contMain0 input {
+  background: #000;
+}
 
 .contMain1 {
   display: grid;
