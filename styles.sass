@@ -6,7 +6,15 @@ $VeryDarkCyan: hsl(192, 100%, 9%)
 $VeryPaleBlue: hsl(207, 100%, 98%)
 $FamilyPoppins: 'Poppins', sans-serif
 $FamilyOpenSans: 'Open Sans', sans-serif
-
+@mixin buttonSubmit($backButton,$colorButton, $borderButton, $fontButton, $widthButton)
+    border: 1px solid $Pink
+    border-radius: $borderButton
+    padding: 5px 10px
+    background: $backButton
+    color: $colorButton
+    font-family: $fontButton
+    font-size: 10px
+    width: $widthButton
 body
     background: white
 .containerMain
@@ -22,7 +30,7 @@ body
     img
         width: 100px
     input
-        background: #000
+        @include buttonSubmit(#fff,#000, 40px, $FamilyOpenSans, 100% )
 
 .contMain1
     display: grid
@@ -32,7 +40,7 @@ body
     h1, p
         text-align: center
     input
-        width: 60%
+        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 55%)
 
 .contMain2
     display: grid
@@ -72,6 +80,7 @@ body
         text-align: center
     input
         width: 60%
+        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 40%)
 
 .contMain7
     div:nth-child(1)
@@ -83,6 +92,7 @@ body
         input[type="submit"]
             width: 40%
             justify-self: end
+            @include buttonSubmit($Pink, #fff, 5px, $FamilyOpenSans, 45%)
     div:nth-child(2)
         background: red
         display: grid
