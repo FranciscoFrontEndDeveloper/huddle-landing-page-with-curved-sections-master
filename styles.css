@@ -35,7 +35,15 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-.contMain1 h1, .contMain1 p {
+.contMain1 h1 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  width: 70%;
+  text-align: center;
+}
+.contMain1 p {
+  color: red;
   text-align: center;
 }
 .contMain1 input {
@@ -70,6 +78,13 @@ body {
   width: 20px;
   height: 20px;
 }
+.contMain2 div:nth-child(2) h2, .contMain2 div:nth-child(3) h2 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
 
 .contMain3, .contMain4, .contMain5 {
   display: grid;
@@ -80,6 +95,13 @@ body {
 .contMain3 img, .contMain4 img, .contMain5 img {
   width: 100%;
   padding: 0px 10px;
+}
+.contMain3 h3, .contMain4 h3, .contMain5 h3 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
 }
 .contMain3 h3, .contMain3 p, .contMain4 h3, .contMain4 p, .contMain5 h3, .contMain5 p {
   text-align: center;
@@ -93,6 +115,11 @@ body {
   gap: 30px;
 }
 .contMain6 h3 {
+  text-align: center;
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  width: 70%;
   text-align: center;
 }
 .contMain6 input {

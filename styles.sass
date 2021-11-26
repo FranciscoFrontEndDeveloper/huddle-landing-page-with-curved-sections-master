@@ -15,6 +15,16 @@ $FamilyOpenSans: 'Open Sans', sans-serif
     font-family: $fontButton
     font-size: 10px
     width: $widthButton
+@mixin titleMain($fontSize, $widthTitle)
+    color: $VeryDarkCyan
+    font-family: $FamilyPoppins
+    font-size: $fontSize
+    width: $widthTitle
+    text-align: center
+@mixin paragraphMain()
+    color: red
+    text-align: center
+
 body
     background: white
 .containerMain
@@ -37,8 +47,10 @@ body
     justify-items: center
     flex-direction: column
     gap: 40px
-    h1, p
-        text-align: center
+    h1
+        @include titleMain(18px, 70%)
+    p
+        @include paragraphMain
     input
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 55%)
 
@@ -58,7 +70,8 @@ body
         img
             width: 20px
             height: 20px
-
+        h2
+            @include titleMain(36px, 100%)
 .contMain3, .contMain4, .contMain5
     display: grid
     grid-template-columns: 1fr
@@ -67,6 +80,8 @@ body
     img
         width: 100%
         padding: 0px 10px
+    h3
+        @include titleMain(14px, 100%)
     h3, p
         text-align: center
 
@@ -78,6 +93,7 @@ body
     gap: 30px
     h3
         text-align: center
+        @include titleMain(18px, 70%)
     input
         width: 60%
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 40%)
