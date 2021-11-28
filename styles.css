@@ -10,10 +10,14 @@ body {
 }
 
 .contMain0 {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 1fr;
+  display: flex;
   padding: 30px 10px;
+}
+.contMain0 div:nth-child(1) {
+  flex: 1 1 auto;
+}
+.contMain0 div:nth-child(2) {
+  flex: 0 0 auto;
 }
 .contMain0 img {
   width: 100px;
@@ -30,21 +34,26 @@ body {
 }
 
 .contMain1 {
-  display: grid;
-  justify-items: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 .contMain1 h1 {
   color: #00252e;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   width: 70%;
   text-align: center;
 }
 .contMain1 p {
-  color: red;
+  color: #00252e;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1.7px;
+  font-weight: 500;
 }
 .contMain1 input {
   border: 1px solid #ff52bf;
@@ -58,8 +67,9 @@ body {
 }
 
 .contMain2 {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .contMain2 div:nth-child(1) {
@@ -72,7 +82,7 @@ body {
   padding: 0px 10px;
 }
 .contMain2 div:nth-child(2), .contMain2 div:nth-child(3) {
-  width: 60%;
+  width: 45%;
 }
 .contMain2 div:nth-child(2) img, .contMain2 div:nth-child(3) img {
   width: 20px;
@@ -81,15 +91,24 @@ body {
 .contMain2 div:nth-child(2) h2, .contMain2 div:nth-child(3) h2 {
   color: #00252e;
   font-family: "Poppins", sans-serif;
-  font-size: 36px;
+  font-size: 55px;
   width: 100%;
   text-align: center;
 }
+.contMain2 div:nth-child(2) p, .contMain2 div:nth-child(3) p {
+  color: #00252e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+}
 
 .contMain3, .contMain4, .contMain5 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .contMain3 img, .contMain4 img, .contMain5 img {
@@ -103,8 +122,15 @@ body {
   width: 100%;
   text-align: center;
 }
-.contMain3 h3, .contMain3 p, .contMain4 h3, .contMain4 p, .contMain5 h3, .contMain5 p {
+.contMain3 p, .contMain4 p, .contMain5 p {
+  color: #00252e;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  padding: 0px 10px;
 }
 
 .contMain6 {
@@ -136,6 +162,26 @@ body {
 
 .contMain7 div:nth-child(1) {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contMain7 div:nth-child(1) h3 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+  text-align: left;
+}
+.contMain7 div:nth-child(1) p {
+  color: #00252e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  text-align: left;
 }
 .contMain7 div:nth-child(1) form {
   display: grid;
@@ -156,6 +202,7 @@ body {
 }
 .contMain7 div:nth-child(2) {
   background: red;
+  padding: 0px 20px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(4, auto);
@@ -167,18 +214,42 @@ body {
 }
 .contMain7 div:nth-child(2) p:nth-child(2) {
   grid-area: para;
+  color: #00252e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  text-align: left;
 }
 .contMain7 div:nth-child(2) img:nth-child(3) {
   grid-area: iconP;
 }
 .contMain7 div:nth-child(2) span:nth-child(4) {
   grid-area: phone;
+  color: #00252e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  text-align-last: left;
 }
 .contMain7 div:nth-child(2) img:nth-child(5) {
   grid-area: iconM;
 }
 .contMain7 div:nth-child(2) span:nth-child(6) {
   grid-area: mail;
+  color: #00252e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  font-weight: 500;
+  text-align-last: left;
 }
 .contMain7 div:nth-child(3) {
   background: #41e620;

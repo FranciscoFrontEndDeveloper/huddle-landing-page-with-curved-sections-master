@@ -21,9 +21,14 @@ $FamilyOpenSans: 'Open Sans', sans-serif
     font-size: $fontSize
     width: $widthTitle
     text-align: center
-@mixin paragraphMain()
-    color: red
+@mixin paragraphMain($letteSpacingP)
+    color: $VeryDarkCyan
     text-align: center
+    font-family: $FamilyOpenSans
+    font-size: 12px
+    line-height: 20px
+    letter-spacing: $letteSpacingP
+    font-weight: 500
 
 body
     background: white
@@ -33,30 +38,33 @@ body
     grid-template-rows: repeat(9, auto )
 
 .contMain0
-    display: grid
-    grid-template-columns: 1fr auto
-    grid-template-rows: 1fr
+    display: flex
     padding: 30px 10px
+    div:nth-child(1)
+        flex: 1 1 auto
+    div:nth-child(2)
+        flex: 0 0 auto
     img
         width: 100px
     input
         @include buttonSubmit(#fff,#000, 40px, $FamilyOpenSans, 100% )
 
 .contMain1
-    display: grid
-    justify-items: center
+    display: flex
     flex-direction: column
+    align-items: center
     gap: 40px
     h1
-        @include titleMain(18px, 70%)
+        @include titleMain(20px, 70%)
     p
-        @include paragraphMain
+        @include paragraphMain(1.7px)
     input
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 55%)
 
 .contMain2
-    display: grid
-    justify-items: center
+    display: flex
+    flex-direction: column
+    align-items: center
     gap: 30px
     div:nth-child(1)
         display: grid
@@ -66,24 +74,27 @@ body
             width: 100%
             padding: 0px 10px
     div:nth-child(2), div:nth-child(3)
-        width: 60%
+        width: 45%
         img
             width: 20px
             height: 20px
         h2
-            @include titleMain(36px, 100%)
+            @include titleMain(55px, 100%)
+        p
+            @include paragraphMain(0.56px)
 .contMain3, .contMain4, .contMain5
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(3,auto)
+    display: flex
+    flex-direction: column
+    align-items: center
     gap: 30px
     img
         width: 100%
         padding: 0px 10px
     h3
         @include titleMain(14px, 100%)
-    h3, p
-        text-align: center
+    p
+        @include paragraphMain(0.56px)
+        padding: 0px 10px
 
 .contMain6
     display: grid
@@ -101,6 +112,14 @@ body
 .contMain7
     div:nth-child(1)
         padding: 0 20px
+        display: flex
+        flex-direction: column
+        h3
+            @include titleMain(14px, 70%)
+            text-align: left
+        p
+            @include paragraphMain(0.56px)
+            text-align: left
         form
             display: grid
             grid-template-columns: 1fr
@@ -111,6 +130,7 @@ body
             @include buttonSubmit($Pink, #fff, 5px, $FamilyOpenSans, 45%)
     div:nth-child(2)
         background: red
+        padding: 0px 20px
         display: grid
         grid-template-columns: auto 1fr
         grid-template-rows: repeat(4,auto )
@@ -120,14 +140,20 @@ body
             grid-area: iconW
         p:nth-child(2)
             grid-area: para
+            @include paragraphMain(0.56px)
+            text-align: left
         img:nth-child(3)
             grid-area: iconP
         span:nth-child(4)
             grid-area: phone
+            @include paragraphMain(0.56px)
+            text-align-last: left
         img:nth-child(5)
             grid-area: iconM
         span:nth-child(6)
             grid-area: mail
+            @include paragraphMain(0.56px)
+            text-align-last: left
     div:nth-child(3)
         background: #41e620
         display: grid
