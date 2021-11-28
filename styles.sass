@@ -110,10 +110,12 @@ body
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 40%)
 
 .contMain7
-    div:nth-child(1)
-        padding: 0 20px
+    display: flex
+    flex-direction: column
+    .contMain7--form
         display: flex
         flex-direction: column
+        padding: 0 20px
         h3
             @include titleMain(14px, 70%)
             text-align: left
@@ -128,37 +130,40 @@ body
             width: 40%
             justify-self: end
             @include buttonSubmit($Pink, #fff, 5px, $FamilyOpenSans, 45%)
-    div:nth-child(2)
+    .contMain7--contact
         background: red
-        padding: 0px 20px
-        display: grid
-        grid-template-columns: auto 1fr
-        grid-template-rows: repeat(4,auto )
-        grid-template-areas: 'iconW iconW' 'para para' 'iconP phone' 'iconM mail'
-        column-gap: 37px
-        img:nth-child(1)
-            grid-area: iconW
-        p:nth-child(2)
-            grid-area: para
-            @include paragraphMain(0.56px)
-            text-align: left
-        img:nth-child(3)
-            grid-area: iconP
-        span:nth-child(4)
-            grid-area: phone
-            @include paragraphMain(0.56px)
-            text-align-last: left
-        img:nth-child(5)
-            grid-area: iconM
-        span:nth-child(6)
-            grid-area: mail
-            @include paragraphMain(0.56px)
-            text-align-last: left
-    div:nth-child(3)
+        display: flex
+        flex-direction: column
+        padding: 0 20px
+        div:nth-child(1)
+            display: flex
+            flex-direction: column
+            img
+                width: 50%
+            p
+                @include paragraphMain(0.56px)
+                color: white
+                text-align: left
+        div:nth-child(2)
+            display: flex
+            flex-direction: column
+            div
+                display: flex
+                flex-direction: row
+                gap: 10px
+                img
+                    width: 20px
+                    height: 20px
+                span
+                    @include paragraphMain(0.56px)
+                    color: white
+    .contMain7--socials
         background: #41e620
-        display: grid
-        grid-template-columns: repeat(3,auto)
-        grid-template-rows: 1fr
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        gap: 20px
+        padding: 20px
         img
             width: 20px
             height: 20px

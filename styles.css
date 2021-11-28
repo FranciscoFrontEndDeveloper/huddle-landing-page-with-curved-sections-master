@@ -160,12 +160,16 @@ body {
   width: 40%;
 }
 
-.contMain7 div:nth-child(1) {
-  padding: 0 20px;
+.contMain7 {
   display: flex;
   flex-direction: column;
 }
-.contMain7 div:nth-child(1) h3 {
+.contMain7 .contMain7--form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.contMain7 .contMain7--form h3 {
   color: #00252e;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -173,7 +177,7 @@ body {
   text-align: center;
   text-align: left;
 }
-.contMain7 div:nth-child(1) p {
+.contMain7 .contMain7--form p {
   color: #00252e;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -183,12 +187,12 @@ body {
   font-weight: 500;
   text-align: left;
 }
-.contMain7 div:nth-child(1) form {
+.contMain7 .contMain7--form form {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
 }
-.contMain7 div:nth-child(1) input[type=submit] {
+.contMain7 .contMain7--form input[type=submit] {
   width: 40%;
   justify-self: end;
   border: 1px solid #ff52bf;
@@ -200,20 +204,20 @@ body {
   font-size: 10px;
   width: 45%;
 }
-.contMain7 div:nth-child(2) {
+.contMain7 .contMain7--contact {
   background: red;
-  padding: 0px 20px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "iconW iconW" "para para" "iconP phone" "iconM mail";
-  column-gap: 37px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
-.contMain7 div:nth-child(2) img:nth-child(1) {
-  grid-area: iconW;
+.contMain7 .contMain7--contact div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
 }
-.contMain7 div:nth-child(2) p:nth-child(2) {
-  grid-area: para;
+.contMain7 .contMain7--contact div:nth-child(1) img {
+  width: 50%;
+}
+.contMain7 .contMain7--contact div:nth-child(1) p {
   color: #00252e;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -221,13 +225,23 @@ body {
   line-height: 20px;
   letter-spacing: 0.56px;
   font-weight: 500;
+  color: white;
   text-align: left;
 }
-.contMain7 div:nth-child(2) img:nth-child(3) {
-  grid-area: iconP;
+.contMain7 .contMain7--contact div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
 }
-.contMain7 div:nth-child(2) span:nth-child(4) {
-  grid-area: phone;
+.contMain7 .contMain7--contact div:nth-child(2) div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.contMain7 .contMain7--contact div:nth-child(2) div img {
+  width: 20px;
+  height: 20px;
+}
+.contMain7 .contMain7--contact div:nth-child(2) div span {
   color: #00252e;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -235,29 +249,17 @@ body {
   line-height: 20px;
   letter-spacing: 0.56px;
   font-weight: 500;
-  text-align-last: left;
+  color: white;
 }
-.contMain7 div:nth-child(2) img:nth-child(5) {
-  grid-area: iconM;
-}
-.contMain7 div:nth-child(2) span:nth-child(6) {
-  grid-area: mail;
-  color: #00252e;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.56px;
-  font-weight: 500;
-  text-align-last: left;
-}
-.contMain7 div:nth-child(3) {
+.contMain7 .contMain7--socials {
   background: #41e620;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
 }
-.contMain7 div:nth-child(3) img {
+.contMain7 .contMain7--socials img {
   width: 20px;
   height: 20px;
 }/*# sourceMappingURL=styles.css.map */
