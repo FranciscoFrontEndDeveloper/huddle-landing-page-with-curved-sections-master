@@ -68,9 +68,6 @@ body
     align-items: center
     gap: 30px
     div:nth-child(1)
-        display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: repeat(3,auto )
         img
             width: 100%
             padding: 0px 10px
@@ -98,10 +95,9 @@ body
         padding: 0px 10px
 
 .contMain6
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: repeat(2,auto )
-    justify-items: center
+    display: flex
+    flex-direction: column
+    align-items: center
     gap: 30px
     h3
         text-align: center
@@ -124,9 +120,11 @@ body
             @include paragraphMain(0.56px)
             text-align: left
         form
-            display: grid
-            grid-template-columns: 1fr
-            grid-template-rows: repeat(4,auto )
+            display: flex
+            flex-direction: column
+            align-items: end
+        input[type="text"]
+            width: 100%
         input[type="submit"]
             width: 40%
             justify-self: end
@@ -170,8 +168,8 @@ body
             height: 20px
 
 .containerFooter
-    display: grid
-    justify-items: center
+    display: flex
+    flex-direction: column
     background: #000
     width: 100%
     font-size: 12px

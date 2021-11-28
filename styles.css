@@ -73,11 +73,6 @@ body {
   align-items: center;
   gap: 30px;
 }
-.contMain2 div:nth-child(1) {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-}
 .contMain2 div:nth-child(1) img {
   width: 100%;
   padding: 0px 10px;
@@ -135,10 +130,9 @@ body {
 }
 
 .contMain6 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .contMain6 h3 {
@@ -189,9 +183,12 @@ body {
   text-align: left;
 }
 .contMain7 .contMain7--form form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.contMain7 .contMain7--form input[type=text] {
+  width: 100%;
 }
 .contMain7 .contMain7--form input[type=submit] {
   width: 40%;
@@ -266,8 +263,8 @@ body {
 }
 
 .containerFooter {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   background: #000;
   width: 100%;
   font-size: 12px;
