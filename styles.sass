@@ -10,12 +10,13 @@ $FamilyOpenSans: 'Open Sans', sans-serif
 @mixin buttonSubmit($backButton,$colorButton, $borderButton, $fontButton, $widthButton)
     border: 1px solid $Pink
     border-radius: $borderButton
-    padding: 5px 10px
+    padding: 10px 0px
     background: $backButton
     color: $colorButton
     font-family: $fontButton
-    font-size: 10px
+    font-size: 11px
     width: $widthButton
+    font-weight: bold
 @mixin titleMain($fontSize, $widthTitle)
     color: $VeryDarkCyan
     font-family: $FamilyPoppins
@@ -37,10 +38,11 @@ body
     display: grid
     grid-template-columns: 1fr
     grid-template-rows: repeat(9, auto )
-
+.contMain0,.contMain1,.contMain2,.contMain3,.contMain4,.contMain5,.contMain6
+    padding: 0px 10px
 .contMain0
     display: flex
-    padding: 30px 10px
+    padding-top: 30px
     div:nth-child(1)
         flex: 1 1 auto
     div:nth-child(2)
@@ -49,18 +51,21 @@ body
         width: 100px
     input
         @include buttonSubmit(#fff,#000, 40px, $FamilyOpenSans, 100% )
-
+        padding: 6px 20px
+        font-size: 8px
+        color: $LightPink
+        border: 1px solid $LightPink
 .contMain1
     display: flex
     flex-direction: column
     align-items: center
     gap: 40px
     h1
-        @include titleMain(20px, 70%)
+        @include titleMain(20px, 80%)
     p
-        @include paragraphMain(1.7px)
+        @include paragraphMain(0.63px)
     input
-        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 55%)
+        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
 
 .contMain2
     display: flex
@@ -70,7 +75,6 @@ body
     div:nth-child(1)
         img
             width: 100%
-            padding: 0px 10px
     div:nth-child(2), div:nth-child(3)
         width: 45%
         img
@@ -87,12 +91,10 @@ body
     gap: 30px
     img
         width: 100%
-        padding: 0px 10px
     h3
         @include titleMain(14px, 100%)
     p
         @include paragraphMain(0.56px)
-        padding: 0px 10px
 
 .contMain6
     display: flex
@@ -103,40 +105,52 @@ body
         text-align: center
         @include titleMain(18px, 70%)
     input
-        width: 60%
-        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 40%)
+        @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
 
 .contMain7
     display: flex
     flex-direction: column
+    background: #00252E
+    gap: 30px
+    .topImage
+        width: 100%
+        background: white
     .contMain7--form
         display: flex
         flex-direction: column
         padding: 0 20px
+        gap: 10px
         h3
             @include titleMain(14px, 70%)
             text-align: left
+            color: white
         p
             @include paragraphMain(0.56px)
             text-align: left
+            color: white
         form
             display: flex
             flex-direction: column
             align-items: end
+            gap: 15px
         input[type="text"]
             width: 100%
+            border: none
+            border-radius: 5px
+            padding: 5px 0px
         input[type="submit"]
             width: 40%
             justify-self: end
             @include buttonSubmit($Pink, #fff, 5px, $FamilyOpenSans, 45%)
     .contMain7--contact
-        background: red
         display: flex
         flex-direction: column
         padding: 0 20px
+        gap: 20px
         div:nth-child(1)
             display: flex
             flex-direction: column
+            gap: 20px
             img
                 width: 50%
             p
@@ -146,6 +160,7 @@ body
         div:nth-child(2)
             display: flex
             flex-direction: column
+            gap: 20px
             div
                 display: flex
                 flex-direction: row
@@ -157,7 +172,6 @@ body
                     @include paragraphMain(0.56px)
                     color: white
     .contMain7--socials
-        background: #41e620
         display: flex
         flex-direction: row
         justify-content: flex-start

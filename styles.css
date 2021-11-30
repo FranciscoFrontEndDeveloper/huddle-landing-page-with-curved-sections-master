@@ -10,9 +10,13 @@ body {
   grid-template-rows: repeat(9, auto);
 }
 
+.contMain0, .contMain1, .contMain2, .contMain3, .contMain4, .contMain5, .contMain6 {
+  padding: 0px 10px;
+}
+
 .contMain0 {
   display: flex;
-  padding: 30px 10px;
+  padding-top: 30px;
 }
 .contMain0 div:nth-child(1) {
   flex: 1 1 auto;
@@ -26,12 +30,17 @@ body {
 .contMain0 input {
   border: 1px solid #ff52bf;
   border-radius: 40px;
-  padding: 5px 10px;
+  padding: 10px 0px;
   background: #fff;
   color: #000;
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   width: 100%;
+  font-weight: bold;
+  padding: 6px 20px;
+  font-size: 8px;
+  color: #ff8fd8;
+  border: 1px solid #ff8fd8;
 }
 
 .contMain1 {
@@ -44,7 +53,7 @@ body {
   color: #00252e;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 .contMain1 p {
@@ -53,18 +62,19 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.63px;
   font-weight: 500;
 }
 .contMain1 input {
   border: 1px solid #ff52bf;
   border-radius: 40px;
-  padding: 5px 10px;
+  padding: 10px 0px;
   background: #ff52bf;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
-  width: 55%;
+  font-size: 11px;
+  width: 50%;
+  font-weight: bold;
 }
 
 .contMain2 {
@@ -75,7 +85,6 @@ body {
 }
 .contMain2 div:nth-child(1) img {
   width: 100%;
-  padding: 0px 10px;
 }
 .contMain2 div:nth-child(2), .contMain2 div:nth-child(3) {
   width: 45%;
@@ -109,7 +118,6 @@ body {
 }
 .contMain3 img, .contMain4 img, .contMain5 img {
   width: 100%;
-  padding: 0px 10px;
 }
 .contMain3 h3, .contMain4 h3, .contMain5 h3 {
   color: #00252e;
@@ -126,7 +134,6 @@ body {
   line-height: 20px;
   letter-spacing: 0.56px;
   font-weight: 500;
-  padding: 0px 10px;
 }
 
 .contMain6 {
@@ -144,25 +151,32 @@ body {
   text-align: center;
 }
 .contMain6 input {
-  width: 60%;
   border: 1px solid #ff52bf;
   border-radius: 40px;
-  padding: 5px 10px;
+  padding: 10px 0px;
   background: #ff52bf;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
-  width: 40%;
+  font-size: 11px;
+  width: 50%;
+  font-weight: bold;
 }
 
 .contMain7 {
   display: flex;
   flex-direction: column;
+  background: #00252E;
+  gap: 30px;
+}
+.contMain7 .topImage {
+  width: 100%;
+  background: white;
 }
 .contMain7 .contMain7--form {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  gap: 10px;
 }
 .contMain7 .contMain7--form h3 {
   color: #00252e;
@@ -171,6 +185,7 @@ body {
   width: 70%;
   text-align: center;
   text-align: left;
+  color: white;
 }
 .contMain7 .contMain7--form p {
   color: #00252e;
@@ -181,36 +196,43 @@ body {
   letter-spacing: 0.56px;
   font-weight: 500;
   text-align: left;
+  color: white;
 }
 .contMain7 .contMain7--form form {
   display: flex;
   flex-direction: column;
   align-items: end;
+  gap: 15px;
 }
 .contMain7 .contMain7--form input[type=text] {
   width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0px;
 }
 .contMain7 .contMain7--form input[type=submit] {
   width: 40%;
   justify-self: end;
   border: 1px solid #ff52bf;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 0px;
   background: #ff52bf;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   width: 45%;
+  font-weight: bold;
 }
 .contMain7 .contMain7--contact {
-  background: red;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  gap: 20px;
 }
 .contMain7 .contMain7--contact div:nth-child(1) {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .contMain7 .contMain7--contact div:nth-child(1) img {
   width: 50%;
@@ -229,6 +251,7 @@ body {
 .contMain7 .contMain7--contact div:nth-child(2) {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .contMain7 .contMain7--contact div:nth-child(2) div {
   display: flex;
@@ -250,7 +273,6 @@ body {
   color: white;
 }
 .contMain7 .contMain7--socials {
-  background: #41e620;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
