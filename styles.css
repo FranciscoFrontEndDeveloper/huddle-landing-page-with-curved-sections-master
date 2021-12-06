@@ -359,4 +359,56 @@ body {
     flex-wrap: wrap;
     width: auto;
   }
+  .contMain3, .contMain5 {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "title img" "paragrah img";
+    justify-content: center;
+  }
+  .contMain3 img, .contMain5 img {
+    grid-area: img;
+  }
+  .contMain3 h3, .contMain5 h3 {
+    grid-area: title;
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    width: 80%;
+    text-align: center;
+    text-align: left;
+    align-self: end;
+  }
+  .contMain3 p, .contMain5 p {
+    grid-area: paragrah;
+    text-align: left;
+    align-self: start;
+  }
+
+  .contMain4 {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "img title" "img paragrah";
+    justify-content: center;
+  }
+  .contMain4 img {
+    grid-area: img;
+  }
+  .contMain4 h3 {
+    grid-area: title;
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    width: 80%;
+    text-align: center;
+    text-align: left;
+    align-self: end;
+  }
+  .contMain4 p {
+    grid-area: paragrah;
+    text-align: left;
+    align-self: start;
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=styles.css.map */

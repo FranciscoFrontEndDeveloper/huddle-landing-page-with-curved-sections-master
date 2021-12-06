@@ -228,3 +228,38 @@ body
             flex-wrap: wrap
             width: auto
             img
+    .contMain3, .contMain5
+        display: grid
+        grid-template-columns: repeat(2,40% )
+        grid-template-rows: repeat(2,auto )
+        grid-template-areas: 'title img' 'paragrah img'
+        justify-content: center
+        img
+            grid-area: img
+        h3
+            grid-area: title
+            @include titleMain(24px, 80%)
+            text-align: left
+            align-self: end
+        p
+            grid-area: paragrah
+            text-align: left
+            align-self: start
+    .contMain4
+        display: grid
+        grid-template-columns: repeat(2,40% )
+        grid-template-rows: repeat(2,auto )
+        grid-template-areas: 'img title' 'img paragrah'
+        justify-content: center
+        img
+            grid-area: img
+        h3
+            grid-area: title
+            @include titleMain(24px, 80%)
+            text-align: left
+            align-self: end
+        p
+            grid-area: paragrah
+            text-align: left
+            align-self: start
+            font-size: 11px
