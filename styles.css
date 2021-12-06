@@ -305,4 +305,58 @@ body {
 }
 .containerFooter a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .contMain1 h1 {
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+  }
+  .contMain1 p {
+    color: #00252e;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.63px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 40%;
+  }
+  .contMain1 input {
+    border: 1px solid #ff52bf;
+    border-radius: 40px;
+    padding: 10px 0px;
+    background: #ff52bf;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    width: 50%;
+    font-weight: bold;
+    width: 20%;
+    padding: 20px 0;
+  }
+
+  .contMain2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contMain2 div:nth-child(1) {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+  }
+  .contMain2 div:nth-child(1) img {
+    width: 80%;
+  }
+  .contMain2 div:nth-child(2), .contMain2 div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */

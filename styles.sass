@@ -199,3 +199,32 @@ body
         text-decoration: none
         &:hover
             text-decoration: underline
+
+@media screen and ( min-width: 1024px )
+    .contMain1
+        h1
+            @include titleMain(32px, 80%)
+        p
+            @include paragraphMain(0.63px)
+            font-size: 16px
+            width: 40%
+        input
+            @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
+            width: 20%
+            padding: 20px 0
+    .contMain2
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-evenly
+        div:nth-child(1)
+            display: flex
+            flex: 0 1 auto
+            justify-content: center
+            img
+                width: 80%
+        div:nth-child(2), div:nth-child(3)
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            width: auto
+            img
