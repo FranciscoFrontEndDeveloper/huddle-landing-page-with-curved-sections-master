@@ -209,7 +209,7 @@ body {
   width: 100%;
   border: none;
   border-radius: 5px;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 .contMain7 .contMain7--form input[type=submit] {
   width: 40%;
@@ -293,6 +293,7 @@ body {
   font-size: 12px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
+  padding: 10px 0;
 }
 .containerFooter h3 {
   color: #fff;
@@ -347,7 +348,7 @@ body {
   }
   .contMain2 div:nth-child(1) {
     display: flex;
-    flex: 0 1 auto;
+    flex: 1 1 100%;
     justify-content: center;
   }
   .contMain2 div:nth-child(1) img {
@@ -410,5 +411,84 @@ body {
     text-align: left;
     align-self: start;
     font-size: 11px;
+  }
+
+  .contMain6 h3 {
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+  }
+  .contMain6 input {
+    border: 1px solid #ff52bf;
+    border-radius: 40px;
+    padding: 10px 0px;
+    background: #ff52bf;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    width: 20%;
+    font-weight: bold;
+  }
+
+  .contMain7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "imgTop imgTop" "contact form" "socials .";
+    justify-items: start;
+  }
+  .contMain7 .topImage {
+    grid-area: imgTop;
+  }
+  .contMain7 .contMain7--form {
+    grid-area: form;
+    padding: 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+  }
+  .contMain7 .contMain7--form h3 {
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+    color: white;
+    text-align: left;
+  }
+  .contMain7 .contMain7--form p {
+    width: 70%;
+    font-weight: 600;
+  }
+  .contMain7 .contMain7--form form {
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+  .contMain7 .contMain7--form form input[type=text] {
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+  }
+  .contMain7 .contMain7--form form input[type=submit] {
+    width: 20%;
+  }
+  .contMain7 .contMain7--contact {
+    grid-area: contact;
+    padding: 0 0;
+    width: 50%;
+    margin: 0 70px;
+  }
+  .contMain7 .contMain7--contact div:nth-child(1) p {
+    width: 86%;
+    font-weight: 600;
+  }
+  .contMain7 .contMain7--socials {
+    grid-area: socials;
+    margin: 0 70px;
+    padding-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

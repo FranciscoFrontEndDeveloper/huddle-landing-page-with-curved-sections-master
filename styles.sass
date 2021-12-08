@@ -138,7 +138,7 @@ body
             width: 100%
             border: none
             border-radius: 5px
-            padding: 5px 0px
+            padding: 10px 0px
         input[type="submit"]
             width: 40%
             justify-self: end
@@ -190,6 +190,7 @@ body
     font-size: 12px
     font-family: 'Heebo', sans-serif
     font-weight: bold
+    padding: 10px 0
     h3
         color: #fff
         text-align: center
@@ -218,7 +219,7 @@ body
         justify-content: space-evenly
         div:nth-child(1)
             display: flex
-            flex: 0 1 auto
+            flex: 1 1 100%
             justify-content: center
             img
                 width: 80%
@@ -263,3 +264,53 @@ body
             text-align: left
             align-self: start
             font-size: 11px
+    .contMain6
+        h3
+            @include titleMain(24px, 70%)
+        input
+            @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 20%)
+    .contMain7
+        display: grid
+        grid-template-columns: repeat(2,1fr )
+        grid-template-rows: repeat(3,auto )
+        grid-template-areas: 'imgTop imgTop' 'contact form' 'socials .'
+        justify-items: start
+        .topImage
+            grid-area: imgTop
+        .contMain7--form
+            grid-area: form
+            padding: 0 0
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: center
+            width: 70%
+            h3
+                @include titleMain(24px, 70%)
+                color: white
+                text-align: left
+            p
+                width: 70%
+                font-weight: 600
+            form
+                flex-direction: row
+                align-items: center
+                flex: 1 1 auto
+                input[type="text"]
+                    border: none
+                    border-radius: 5px
+                    width: 60%
+                input[type="submit"]
+                    width: 20%
+        .contMain7--contact
+            grid-area: contact
+            padding: 0 0
+            width: 50%
+            margin: 0 70px
+            div:nth-child(1)
+                p
+                    width: 86%
+                    font-weight: 600
+        .contMain7--socials
+            grid-area: socials
+            margin: 0 70px
+            padding-left: 0
