@@ -8,7 +8,7 @@ $VeryPaleBlue: hsl(207, 100%, 98%)
 $FamilyPoppins: 'Poppins', sans-serif
 $FamilyOpenSans: 'Open Sans', sans-serif
 @mixin buttonSubmit($backButton,$colorButton, $borderButton, $fontButton, $widthButton)
-    border: 1px solid $Pink
+    border: none
     border-radius: $borderButton
     padding: 10px 0px
     background: $backButton
@@ -17,6 +17,9 @@ $FamilyOpenSans: 'Open Sans', sans-serif
     font-size: 11px
     width: $widthButton
     font-weight: bold
+    &:hover
+        background: $LightPink
+        cursor: pointer
 @mixin titleMain($fontSize, $widthTitle)
     color: $VeryDarkCyan
     font-family: $FamilyPoppins
@@ -46,6 +49,8 @@ body
     padding-top: 30px
     div:nth-child(1)
         flex: 1 1 auto
+        display: flex
+        align-items: center
     div:nth-child(2)
         flex: 0 0 auto
     img
@@ -54,8 +59,14 @@ body
         @include buttonSubmit(#fff,#000, 40px, $FamilyOpenSans, 100% )
         padding: 6px 20px
         font-size: 8px
-        color: $LightPink
-        border: 1px solid $LightPink
+        color: $Pink
+        border: 1px solid $Pink
+        &:hover
+            background: #fff
+            border: 1px solid $LightPink
+            cursor: pointer
+            color: $LightPink
+
 .contMain1
     display: flex
     flex-direction: column
@@ -67,6 +78,7 @@ body
         @include paragraphMain(0.63px)
     input
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
+        box-shadow: 5px 5px 18px 0px rgba(91,91,91,0.52)
 
 .contMain2
     display: flex
@@ -85,6 +97,7 @@ body
             @include titleMain(55px, 100%)
         p
             @include paragraphMain(0.56px)
+            color: #ccc
 .contMain3, .contMain4, .contMain5
     display: flex
     flex-direction: column
@@ -107,6 +120,7 @@ body
         @include titleMain(18px, 70%)
     input
         @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
+        box-shadow: 5px 5px 18px 0px rgba(91,91,91,0.52)
 
 .contMain7
     display: flex
@@ -202,6 +216,11 @@ body
             text-decoration: underline
 
 @media screen and ( min-width: 1024px )
+    .contMain0
+        img
+            width: 250px
+        input
+            font-size: 15px
     .contMain1
         h1
             @include titleMain(32px, 80%)
@@ -213,6 +232,7 @@ body
             @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
             width: 20%
             padding: 20px 0
+            font-size: 15px
     .contMain2
         flex-direction: row
         flex-wrap: wrap
@@ -239,13 +259,14 @@ body
             grid-area: img
         h3
             grid-area: title
-            @include titleMain(24px, 80%)
+            @include titleMain(40px, 80%)
             text-align: left
             align-self: end
         p
             grid-area: paragrah
             text-align: left
             align-self: start
+            font-size: 15px
     .contMain4
         display: grid
         grid-template-columns: repeat(2,40% )
@@ -256,19 +277,22 @@ body
             grid-area: img
         h3
             grid-area: title
-            @include titleMain(24px, 80%)
+            @include titleMain(35px, 80%)
             text-align: left
             align-self: end
         p
             grid-area: paragrah
             text-align: left
             align-self: start
-            font-size: 11px
+            font-size: 15px
     .contMain6
         h3
             @include titleMain(24px, 70%)
         input
-            @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 20%)
+            @include buttonSubmit($Pink, #fff, 40px, $FamilyOpenSans, 50%)
+            width: 20%
+            padding: 20px 0
+            font-size: 15px
     .contMain7
         display: grid
         grid-template-columns: repeat(2,1fr )

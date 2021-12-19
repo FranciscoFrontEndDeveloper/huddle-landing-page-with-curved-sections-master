@@ -21,6 +21,8 @@ body {
 }
 .contMain0 div:nth-child(1) {
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 }
 .contMain0 div:nth-child(2) {
   flex: 0 0 auto;
@@ -29,7 +31,7 @@ body {
   width: 100px;
 }
 .contMain0 input {
-  border: 1px solid #ff52bf;
+  border: none;
   border-radius: 40px;
   padding: 10px 0px;
   background: #fff;
@@ -40,8 +42,18 @@ body {
   font-weight: bold;
   padding: 6px 20px;
   font-size: 8px;
-  color: #ff8fd8;
+  color: #ff52bf;
+  border: 1px solid #ff52bf;
+}
+.contMain0 input:hover {
+  background: #ff8fd8;
+  cursor: pointer;
+}
+.contMain0 input:hover {
+  background: #fff;
   border: 1px solid #ff8fd8;
+  cursor: pointer;
+  color: #ff8fd8;
 }
 
 .contMain1 {
@@ -67,7 +79,7 @@ body {
   font-weight: 500;
 }
 .contMain1 input {
-  border: 1px solid #ff52bf;
+  border: none;
   border-radius: 40px;
   padding: 10px 0px;
   background: #ff52bf;
@@ -76,6 +88,11 @@ body {
   font-size: 11px;
   width: 50%;
   font-weight: bold;
+  box-shadow: 5px 5px 18px 0px rgba(91, 91, 91, 0.52);
+}
+.contMain1 input:hover {
+  background: #ff8fd8;
+  cursor: pointer;
 }
 
 .contMain2 {
@@ -109,6 +126,7 @@ body {
   line-height: 20px;
   letter-spacing: 0.56px;
   font-weight: 500;
+  color: #ccc;
 }
 
 .contMain3, .contMain4, .contMain5 {
@@ -152,7 +170,7 @@ body {
   text-align: center;
 }
 .contMain6 input {
-  border: 1px solid #ff52bf;
+  border: none;
   border-radius: 40px;
   padding: 10px 0px;
   background: #ff52bf;
@@ -161,6 +179,11 @@ body {
   font-size: 11px;
   width: 50%;
   font-weight: bold;
+  box-shadow: 5px 5px 18px 0px rgba(91, 91, 91, 0.52);
+}
+.contMain6 input:hover {
+  background: #ff8fd8;
+  cursor: pointer;
 }
 
 .contMain7 {
@@ -214,7 +237,7 @@ body {
 .contMain7 .contMain7--form input[type=submit] {
   width: 40%;
   justify-self: end;
-  border: 1px solid #ff52bf;
+  border: none;
   border-radius: 5px;
   padding: 10px 0px;
   background: #ff52bf;
@@ -223,6 +246,10 @@ body {
   font-size: 11px;
   width: 45%;
   font-weight: bold;
+}
+.contMain7 .contMain7--form input[type=submit]:hover {
+  background: #ff8fd8;
+  cursor: pointer;
 }
 .contMain7 .contMain7--contact {
   display: flex;
@@ -309,6 +336,13 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .contMain0 img {
+    width: 250px;
+  }
+  .contMain0 input {
+    font-size: 15px;
+  }
+
   .contMain1 h1 {
     color: #00252e;
     font-family: "Poppins", sans-serif;
@@ -328,7 +362,7 @@ body {
     width: 40%;
   }
   .contMain1 input {
-    border: 1px solid #ff52bf;
+    border: none;
     border-radius: 40px;
     padding: 10px 0px;
     background: #ff52bf;
@@ -339,6 +373,11 @@ body {
     font-weight: bold;
     width: 20%;
     padding: 20px 0;
+    font-size: 15px;
+  }
+  .contMain1 input:hover {
+    background: #ff8fd8;
+    cursor: pointer;
   }
 
   .contMain2 {
@@ -374,7 +413,7 @@ body {
     grid-area: title;
     color: #00252e;
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
+    font-size: 40px;
     width: 80%;
     text-align: center;
     text-align: left;
@@ -384,6 +423,7 @@ body {
     grid-area: paragrah;
     text-align: left;
     align-self: start;
+    font-size: 15px;
   }
 
   .contMain4 {
@@ -400,7 +440,7 @@ body {
     grid-area: title;
     color: #00252e;
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     width: 80%;
     text-align: center;
     text-align: left;
@@ -410,7 +450,7 @@ body {
     grid-area: paragrah;
     text-align: left;
     align-self: start;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .contMain6 h3 {
@@ -421,15 +461,22 @@ body {
     text-align: center;
   }
   .contMain6 input {
-    border: 1px solid #ff52bf;
+    border: none;
     border-radius: 40px;
     padding: 10px 0px;
     background: #ff52bf;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 11px;
-    width: 20%;
+    width: 50%;
     font-weight: bold;
+    width: 20%;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .contMain6 input:hover {
+    background: #ff8fd8;
+    cursor: pointer;
   }
 
   .contMain7 {
